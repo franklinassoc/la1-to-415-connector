@@ -1,0 +1,38 @@
+<!doctype html>
+<html xml:lang="EN" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+<meta charset="utf-8"><title>LA 1 to LA 415 Connector</title>
+ <link rel="stylesheet" href="./css/leaflet.css" />
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
+<![endif]-->
+<style type="text/css">
+html, body, #graphic {
+width: 100%;
+height: 90%;
+padding: 0;
+margin: 5;
+}
+</style>
+	</head>
+	<body bgcolor=#000000>
+<div id="graphic"></div>
+    <script src="./js/leaflet.js"></script>
+<script type="text/javascript" src="L.TileLayer.Zoomify.js"></script>
+<script type="text/javascript">
+
+var map = L.map('graphic').setView(new L.LatLng(0,0), 0);
+L.tileLayer.zoomify('./pyramids/connectors_3-orange-only/', { width: 3300, height: 5100,			 
+tolerance: 0.8,
+attribution: 'Maps by TRC for Louisiana DOTD.'
+}).addTo(map);
+
+</script>
+<center><font color="#000000" face="arial" size="2"><br>
+Exhibit 3 of 6 - project in West Baton Rouge Parish </font><br>
+<font color="#576562" face="arial" size="2">
+State Proj. No.: H.H005121 - November 2021<br>
+Use your mouse to click, pan and zoom around the image. You may need to
+enlarge your web browser's window for optimal use.</font></center>
+</body>
+</html>
